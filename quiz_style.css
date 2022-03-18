@@ -1,0 +1,64 @@
+
+.b{
+    margin-top:12px;
+    margin-left:12px;
+    margin-bottom:12px;
+    width:150px;
+    height:100px;
+}
+
+#ribbon{
+
+    position: sticky;
+    top:0;
+    z-index:99999;
+    
+    }
+
+    .question{
+        border-top:solid blue 20px;
+        background-color:white;
+        width:75%;
+        height:40%;
+        margin-left:200px;
+    }
+    .quest{
+        color:purple;
+        font-family:Georgia;
+    }
+    
+
+    #score{
+        color:white;
+        font-family:Georgia;
+        font-weight:bold;
+        position:sticky;
+        z-index:99999;
+        top:0;
+        background-color: yellow;
+    }
+    .top{
+        position:sticky;
+        z-index:99999;
+        top:10;   
+    }
+    #submit_b{
+        background-color:black;
+        display:none;
+        color:white;
+        border: solid white 4px;
+        width:150px;
+        height:45px;
+    }
+    #conclude{
+        color:blue;
+        font-family: Georgia;
+        font-weight:bold;
+    }
+    #hide{
+        display:none;
+    }
+   
+
+
+    

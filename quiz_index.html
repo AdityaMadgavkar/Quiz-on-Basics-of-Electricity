@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz on Basics of Electricity</title>
+
+<link type="text/css" rel="stylesheet" href="quiz_style.css"/>
+<script src="quiz_main.js"></script>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-85417367-1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body onload="h()">
+
+<nav class="navbar-inverse" id="ribbon">
+
+<div class="navbar-header">
+<button class="b btn btn-link navbar-brand"  onclick="instr()">Home</button>
+<button class="b btn btn-link navbar-brand" id="hide" onclick="anskey()">View Answer Key</button>
+</div>
+
+<div class="collapse navbar-collapse">
+
+</div>
+
+</nav>
+
+<br/>
+<br/>
+<h2 id="score" class="top"></h2>
+<center>
+
+
+<h2 id="conclude"></h2>
+</center>
+
+
+<br/>
+<div class="question" id="Q1">
+<h3 class="quest">Q1. Give another name for voltage.</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton1_1" onclick="q1()">Current</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton1_2" onclick="q1()">Wattage</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton1_3" onclick="q1ans()">Potential Difference</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton1_4" onclick="q1()">Resistance</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q2">
+<h3 class="quest">Q2. What does Ohm's Law state?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton2_1" onclick="q2()">Force = Mass * Acceleration</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton2_2" onclick="q2ans()">Voltage = Current * Resistance</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton2_3" onclick="q2()">Power = Voltage * Current</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton2_4" onclick="q2()">Energy can neither be created nor destroyed.</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q3">
+<h3 class="quest">Q3. What is Power?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton3_1" onclick="q3()">Flow of electrons</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton3_2" onclick="q3()">Force opposing the flow of electrons</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton3_3" onclick="q3()">Pushing force on electrons</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton3_4" onclick="q3ans()">Amount of energy transferred per second in the circuit</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q4">
+<h3 class="quest">Q4. What are the 2 different types of currents?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton4_1" onclick="q4ans()">Alternate and Direct Current</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton4_2" onclick="q4()">Series and Parallel Current</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton4_3" onclick="q4()">Forward and Backward Current</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton4_4" onclick="q4()">Straight and Curved Current</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q5">
+<h3 class="quest">Q5. In conventional Current, the current flows from:</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton5_1" onclick="q5()">Negative terminal to Negative terminal</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton5_2" onclick="q5ans()">Positive Terminal to Negative Terminal</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton5_3" onclick="q5()">Negative terminal to Positive terminal</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton5_4" onclick="q5()">Positive terminal to Positive terminal</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q6">
+<h3 class="quest">Q6. What is the full form of 'LED' ?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton6_1" onclick="q6()">Luminous Electronic Device</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton6_2" onclick="q6()">Light Escaping Diode</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton6_3" onclick="q6()">Luminous Emmiting Device</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton6_4" onclick="q6ans()">Light Emitting Diode</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q7">
+<h3 class="quest">Q7. What can a capacitor do better than a battery?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton7_1" onclick="q7()">Capacitor can store more energy than a battery</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton7_2" onclick="q7ans()">Capacitor can release the stored energy faster than a battery</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton7_3" onclick="q7()">Capacitor can be recharged, unlike a battery</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton7_4" onclick="q7()">Cpacitor provides a greater current than a battery.</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q8">
+<h3 class="quest">Q8. What is Current measured in?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton8_1" onclick="q8()">Watts</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton8_2" onclick="q8()">Volts</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton8_3" onclick="q8()">Ohms</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton8_4" onclick="q8ans()">Amperes</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q9">
+<h3 class="quest">Q9. What is the name given to any electrical component that requires current to function?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton9_1" onclick="q9ans()">Load</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton9_2" onclick="q9()">Instrument</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton9_3" onclick="q9()">Equipment</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton9_4" onclick="q9()">Device</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+<div class="question" id="Q10">
+<h3 class="quest">Q10. Which of the following can be used to make wire?</h3>
+<br/>
+<ol type="a" start="1">
+<li><button class="btn btn-danger" id="ansbutton10_1" onclick="q10ans()">Silver</button></li>
+    <br/>
+<li><button class="btn btn-warning" id="ansbutton10_2" onclick="q10()">Silicon</button></li>
+<br/>
+<li><button class="btn btn-primary" id="ansbutton10_3" onclick="q10()">Plastic</button></li>
+<br/>
+<li><button class="btn btn-success" id="ansbutton10_4" onclick="q10()">Wood</button></li>
+</ol>
+<br/>
+<br/>
+</div>
+<br/>
+<br/>
+
+<center>
+    <button id="submit_b" onclick="sub()">Submit</button>
+    </center>
+    <br/>
+    <br/>
+
+
+</body>
+</html>
+
+</body>
+</html>
+

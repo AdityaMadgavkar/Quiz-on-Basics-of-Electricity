@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz on Basics of Electricity</title>
+
+<link type="text/css" rel="stylesheet" href="Style.css"/>
+<script src="Main.js"></script>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-85417367-1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar-inverse my-navbar">
+
+<div class="navbar-header">
+
+<button class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+<a class="navbar-brand" href="#instructions">Home</a>
+
+</div>
+
+<div class="collapse navbar-collapse" id="mynav">
+
+
+    <span>
+<button class="btn btn-link b"  onclick="view()">Preview Answer Key</button>
+</span>
+
+</div>
+</nav>
+
+    <marquee  behaviour="scroll" scrollamount="20" direction="left">
+       <h1> <img class="image" src="Images/marquee.jpg"/>
+    <u>    This quiz is on the Basics of Electricity    </u>
+        <img class="image" src="Images/marquee.jpg"/></h1>
+    </marquee>
+
+
+    <section id="instructions">
+    
+
+    <h3><u><b>Following are the Instructions to access the quiz:</b></u></h3>
+    <br/>
+    <center>
+        <h4 id="warning"></h4>
+    </center>
+    <br/>
+    <br/>
+    <h4>1. Enter your name here: <span><input id="input" placeholder="your name" type="text" width="40px" oninput="error()" >     </span></h4>
+    <h4>2. Click on the 'Quiz' option on the ribbon to go to the quiz.</h4>
+    <h4>3. You can also check the answer key of the quiz by clicking on the 'Preview Answer Key' option.</h4>
+    </section>
+    <center>
+    <br/>
+    <button id="sq" class="btn-success" onclick="startQuiz()">Start Quiz</button>
+    <br/>
+    <br/>
+    
+    <img class="gif" width="400px" height="225px" src="Images/ATB.gif"/>
+    </center>
+
+</body>
+
+</html>

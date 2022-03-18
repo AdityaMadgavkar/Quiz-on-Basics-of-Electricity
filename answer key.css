@@ -1,0 +1,26 @@
+.b{
+    margin-top:12px;
+    margin-left:12px;
+    margin-bottom:12px;
+    width:150px;
+    height:100px;
+}
+.question{
+    border-top:solid blue 20px;
+    background-color:white;
+    width:75%;
+    height:40%;
+    margin-left:200px;
+}
+.quest{
+    color:purple;
+    font-family:Georgia;
+}
+.wans{
+    background-color: #FF7F7F;
+    color:red;
+}
+.ans{
+    background-color: #98FB98;
+    color:green; 
+}
